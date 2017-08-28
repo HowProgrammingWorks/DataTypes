@@ -10,7 +10,7 @@ console.log({ u }, typeof(u));
 let o = null;
 console.log({ o }, typeof(o));
 
-// null
+// NaN
 
 let n = NaN;
 console.log({ n }, typeof(n));
