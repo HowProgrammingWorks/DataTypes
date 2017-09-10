@@ -1,9 +1,9 @@
 'use strict';
 
 const i = 5;
+const f = 10.3;
 const s = 'Hello';
 const b = true;
-const f = 10.3;
 
 const o = {
   name: 'Marcus Aurelius',
@@ -24,3 +24,4 @@ console.log({ b }, typeof(b));
 console.log({ f }, typeof(f));
 console.log({ o }, typeof(o), { isArray: Array.isArray(o) });
 console.log({ a }, typeof(a), { isArray: Array.isArray(a) });
+console.log({ a }, { instanceofArray: a instanceof Array });

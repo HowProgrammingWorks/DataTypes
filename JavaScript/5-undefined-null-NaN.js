@@ -17,3 +17,5 @@ console.log({ n }, typeof(n));
 
 n = undefined + 1;
 console.log({ n }, typeof(n));
+
+console.log(Infinity, -Infinity, typeof(Infinity));
