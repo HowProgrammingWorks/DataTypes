@@ -17,6 +17,10 @@ o.city = 'Odessa';
 const a = ['Athens', 'Roma', 'London', 'Beijing', 'Kiev', 'Riga'];
 
 a.push('Odessa');
+a.unshift('New York');
+
+console.log('shifted:' + a.shift());
+console.log('pop: ' + a.pop());
 
 console.log({ i }, typeof(i));
 console.log({ s }, typeof(s));
