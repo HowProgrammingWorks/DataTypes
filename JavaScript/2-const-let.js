@@ -1,16 +1,15 @@
 'use strict';
 
-console.dir({ a });
+console.dir({ bubbleEffect });
 
-var a = 5;
-let b = 6;
-const c = 7;
+var bubbleEffect = 5;
+let scalarVariable = 6;
+const scalarConstant = 7;
 
-const o = { a, b, c };
-
+const o = { scalarVariable, scalarConstant };
 console.dir(o);
 
-a = 8;
-b = 9;
+o.scalarVariable = 8;
+scalarVariable = 9;
 
 console.dir(o);

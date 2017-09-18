@@ -1,24 +1,25 @@
 'use strict';
 
 // undefined
-
-let u;
-console.log({ u }, typeof(u));
+let emptyScalar;
+console.log({ emptyScalar }, typeof(emptyScalar));
 
 // null
-
-const o = null;
-console.log({ o }, typeof(o));
+const enptyObject = null;
+console.log({ enptyObject }, typeof(enptyObject));
 
 // NaN
+let count = NaN;
+console.log({ count }, typeof(count));
 
-let n = NaN;
-console.log({ n }, typeof(n));
-
-n = undefined + 1;
-console.log(n);
+count = undefined + 1;
+console.dir({ count });
 
 console.log(Infinity, -Infinity, typeof(Infinity));
 
-const s = o === null ? 'o is null' : 'o is not null';
+const s = (
+  enptyObject === null ?
+    'enptyObject is null' :
+    'enptyObject is not null'
+);
 console.log(s);
