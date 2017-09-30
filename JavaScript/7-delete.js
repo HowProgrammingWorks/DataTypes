@@ -14,8 +14,8 @@ const country = {
 delete country.ruler;
 console.dir({ country });
 
-console.log(delete country.born);
-console.log(delete country.population);
+delete country.born;
+delete country.population;
 console.dir({ country });
 
 const currencies = ['BTC', 'EUR', 'UAH', 'USD'];
