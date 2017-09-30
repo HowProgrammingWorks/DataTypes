@@ -2,7 +2,7 @@
 
 const org = 'HowProgrammingWorks';
 
-// console.log(delete org); // Raises SyntaxError in strict mode
+// delete org; // Raises SyntaxError in strict mode
 
 const country = {
   name: 'Chile',
