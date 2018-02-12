@@ -5,8 +5,8 @@ let emptyScalar;
 console.log({ emptyScalar }, typeof(emptyScalar));
 
 // null
-const enptyObject = null;
-console.log({ enptyObject }, typeof(enptyObject));
+const emptyObject = null;
+console.log({ emptyObject }, typeof(emptyObject));
 
 // NaN
 let count = NaN;
@@ -18,8 +18,8 @@ console.dir({ count });
 console.log(Infinity, -Infinity, typeof(Infinity));
 
 const s = (
-  enptyObject === null ?
-    'enptyObject is null' :
-    'enptyObject is not null'
+  emptyObject === null ?
+    'emptyObject is null' :
+    'emptyObject is not null'
 );
 console.log(s);
