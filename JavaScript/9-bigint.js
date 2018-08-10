@@ -1,6 +1,7 @@
 'use strict';
 
-// 2 ** 53 - 1
+// node.js version 10.8.0
+// V8 version 6.7.288.49-node.19
 
 console.log('MAX_SAFE_INTEGER     =', Number.MAX_SAFE_INTEGER);
 console.log('MAX_SAFE_INTEGER + 1 =', Number.MAX_SAFE_INTEGER + 1);
@@ -40,4 +41,9 @@ console.log('2n > 1 =', 2n > 1);
 console.log();
 
 console.log('(1000n ** 200n) / 12321n =', (1000n ** 200n) / 12321n);
+console.log();
+
+const array = [-2, 7, 1n, 3, -2n, 8n, 5, -4n];
+console.log(array);
+console.log(array.sort());
 console.log();
