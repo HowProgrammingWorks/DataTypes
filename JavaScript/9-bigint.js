@@ -43,7 +43,14 @@ console.log();
 console.log('(1000n ** 200n) / 12321n =', (1000n ** 200n) / 12321n);
 console.log();
 
-const array = [-2, 7, 1n, 3, -2n, 8n, 5, -4n];
-console.log(array);
-console.log(array.sort());
+const array2 = [3, -2, 7n, -5n, -1n, 2, 5n, 0];
+console.log(array2);
+console.log(array2.sort());
 console.log();
+
+const array1 = [-2, 7, 1n, 3, -2n, 8n, 5, -4n];
+console.log(array1);
+console.log(array1.sort());
+console.log();
+
+// https://github.com/tc39/proposal-bigint
