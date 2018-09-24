@@ -51,6 +51,7 @@ console.log();
 const array1 = [-2, 7, 1n, 3, -2n, 8n, 5, -4n];
 console.log(array1);
 console.log(array1.sort());
+console.log(array1.sort((a, b) => BigInt(a) - BigInt(b)));
 console.log();
 
 // https://github.com/tc39/proposal-bigint
