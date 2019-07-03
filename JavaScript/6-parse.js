@@ -76,6 +76,6 @@ console.log(parseFloat('(5)')); // NaN
 console.log(parseFloat('"5"')); // NaN
 console.log(parseFloat('[5]')); // NaN
 
-console.log(parseFloat('NaN')); // Infinity
+console.log(parseFloat('NaN')); // NaN
 console.log(parseFloat('Infinity')); // Infinity
 console.log(parseFloat('-Infinity')); // Infinity
