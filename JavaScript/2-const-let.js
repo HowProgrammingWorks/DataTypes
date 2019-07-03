@@ -1,7 +1,7 @@
 'use strict';
 
 hoisted = 5; // Assign 5 to hoisted
-console.dir({ hoisted }); // { bubbleEffect: 5 }
+console.dir({ hoisted }); // { hoisted: 5 }
 var hoisted; // Declare hoisted
 
 let scalarVariable = 6;
