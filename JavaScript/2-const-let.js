@@ -1,8 +1,9 @@
 'use strict';
 
-console.dir({ bubbleEffect });
+hoisted = 5; // Assign 5 to hoisted
+console.dir({ hoisted }); // { hoisted: 5 }
+var hoisted; // Declare hoisted
 
-var bubbleEffect = 5;
 let scalarVariable = 6;
 const scalarConstant = 7;
 
