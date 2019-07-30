@@ -4,10 +4,6 @@
     "es6": true,
     "node": true
   },
-  "globals": {
-    "Atomics": true,
-    "BigInt": true
-  },
   "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaVersion": 2018
