@@ -14,7 +14,7 @@ Prepare two implementations of `inc` function:
 call example: `let a = 5; const b = inc(a); console.dir({ a, b });`
 2. Second with signature `inc(num: Num)` where `Num` is object with field `n`,
 so function will change field of the object passed by reference,
-call example: `let obj = { n: 5} ; inc(obj); console.dir(obj);`
+call example: `let obj = { n: 5 }; inc(obj); console.dir(obj);`
 
 ## Types
 
