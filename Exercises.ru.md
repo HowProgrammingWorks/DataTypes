@@ -11,10 +11,10 @@
 
 Подготовьте две реализации функции `inc`:
 1. C сигнатурой `inc(n: number): number`,
-пример вызова: `let a = 5; const b = inc(a); console.dir({ a, b });`
+пример вызова: `const a = 5; const b = inc(a); console.dir({ a, b });`
 2. C сигнатурой `inc(num: Num)`, где `Num` является объектом с полем `n`,
 чтобы функция изменила поле исходного объекта переданного по ссылке,
-пример вызова `let obj = { n: 5 }; inc(obj); console.dir(obj);`
+пример вызова `const obj = { n: 5 }; inc(obj); console.dir(obj);`
 
 ## Типы объектов
 

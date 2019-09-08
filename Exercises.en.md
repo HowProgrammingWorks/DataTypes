@@ -11,10 +11,10 @@
 
 Prepare two implementations of `inc` function:
 1. First with signature `inc(n: number): number`,
-call example: `let a = 5; const b = inc(a); console.dir({ a, b });`
+call example: `const a = 5; const b = inc(a); console.dir({ a, b });`
 2. Second with signature `inc(num: Num)` where `Num` is object with field `n`,
 so function will change field of the object passed by reference,
-call example: `let obj = { n: 5 }; inc(obj); console.dir(obj);`
+call example: `const obj = { n: 5 }; inc(obj); console.dir(obj);`
 
 ## Types
 
