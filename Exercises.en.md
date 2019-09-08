@@ -20,10 +20,14 @@ call example: `const obj = { n: 5 }; inc(obj); console.dir(obj);`
 
 ## Types
 
-4. Prepare array with values of different type.
-5. Prepare collection (object) with type names as keys and `0` as values,
-example: `{ number: 0, string: 0 }` and so on for all types.
-6. Iterate array with `for..of` loop and increment occurrence counter there
-to get collection of types occurrences count for all types in array.
-7. Modify this example: remove all keys from initial collection literal and
+4. Count different type values in array.
+
+- Prepare array with values of different types, for example:
+`[true, 'hello', 5, 12, -200, false, false, 'word']` but preferably
+longer and more varied.
+- Prepare collection-object (hash) with type names as keys and `0` as values,
+for example: `{ number: 0, string: 0, boolean: 0 }`
+- Iterate array with `for..of` loop and increment occurrence counter there to
+get collection of types occurrences count for all types in array.
+- Modify this example: remove all keys from initial collection literal and
 add all keys dynamically from the loop.
