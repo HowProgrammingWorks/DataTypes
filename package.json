@@ -8,6 +8,6 @@
     "test": "eslint ./Exercises && hpw"
   },
   "dependencies": {
-    "hpw": "^0.1.2"
+    "hpw": "^0.1.3"
   }
 }

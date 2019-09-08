@@ -1,16 +1,21 @@
 ({
   name: 'inc',
-  length: [30, 70],
-  tests: [
-    [{ n: 0 }, { n: 1 }],
-    [{ n: 1 }, { n: 2 }],
-    [{ n: -1 }, { n: 0 }],
-    [{ n: 10000 }, { n: 10001 }],
+  length: [20, 70],
+  cases: [
+    [{ n: 0 }, { n: 1 }, undefined],
+    [{ n: 1 }, { n: 2 }, undefined],
+    [{ n: -1 }, { n: 0 }, undefined],
+    [{ n: 10000 }, { n: 10001 }, undefined],
   ],
   test: inc => {
-    const a = { n: 5 };
-    const b = inc(a);
-    if (a !== b) throw new Error('Result and argument should be equal');
-    if (typeof b !== 'object') throw new Error('Result should be Object');
+    const arg = { n: 5 };
+    const result = inc(arg);
+    if (typeof result !== 'undefined') {
+      throw new Error('Result should be undefined');
+    }
+    if (arg.n !== 6) {
+      const res = JSON.stringify(arg);
+      throw new Error(`Case failed: expected {"n":6}, result: ${res}`);
+    }
   }
 })
