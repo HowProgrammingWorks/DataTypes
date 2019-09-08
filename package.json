@@ -1,13 +1,13 @@
 {
   "name": "example",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "eslint ./Exercises && hpw"
   },
   "dependencies": {
-    "hpw": "^0.1.3"
+    "hpw": "^0.1.4"
   }
 }
