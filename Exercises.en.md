@@ -5,7 +5,7 @@
 1. Implement function containing local variable with hoisting.
 
 - Commit example to github.
-- Use eslint to find this problem and --fix flag to remove it.
+- Use eslint to find this problem.
 - Fix example manually and commit it to github.
 
 ## Scalar value vs Reference
