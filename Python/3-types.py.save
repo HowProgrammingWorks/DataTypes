@@ -1,0 +1,24 @@
+a = 3
+print(type(a))
+#<class 'Int'>
+
+b = 5.2
+type(b)
+print(b)
+#<class 'float'>
+
+print(type(True))
+#<class 'bool'>
+
+print(type(2+3j))
+#<class 'complex'>
+
+print(type('hello'))
+#<class 'str'>
+
+person = {
+    'name' = 'Rikardo'
+    
+'age' = 27
+
+
