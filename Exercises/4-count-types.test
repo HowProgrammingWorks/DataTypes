@@ -1,6 +1,6 @@
 ({
   name: 'countTypesInArray',
-  length: [100, 200],
+  length: [100, 400],
   cases: [
     [[true, true, false], { 'boolean': 3 }],
     [[1, true, 'hello'], { 'number': 1, 'boolean': 1, string: 1 }],
