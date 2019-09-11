@@ -2,11 +2,12 @@
 
 const countTypesInArray = array => {
   const types = {};
-  for (const o of array) {
-    if (typeof(o) in types) {
-      types[typeof(o)]++;
+  for (const el of array) {
+    const type = typeof(el);
+    if (type in types) {
+      types[type]++;
     } else {
-      types[typeof(o)] = 1;
+      types[type] = 1;
     }
   }
 
