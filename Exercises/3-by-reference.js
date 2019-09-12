@@ -1,7 +1,7 @@
 'use strict';
 
 const inc = num => {
-  Num.n++;
+  num.n++;
 };
 
 module.exports = { inc };
