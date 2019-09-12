@@ -1,8 +1,8 @@
 'use strict';
 
 const fn = () => {
-  console.log(name);
   const name = 'Oleg';
+  console.log(name);
 };
 
 module.exports = { fn };
