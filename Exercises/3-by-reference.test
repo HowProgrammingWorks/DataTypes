@@ -2,10 +2,10 @@
   name: 'inc',
   length: [20, 70],
   cases: [
-    [{ n: 0 }, { n: 1 }, undefined],
-    [{ n: 1 }, { n: 2 }, undefined],
-    [{ n: -1 }, { n: 0 }, undefined],
-    [{ n: 10000 }, { n: 10001 }, undefined],
+    [{ n: 0 }, undefined],
+    [{ n: 1 }, undefined],
+    [{ n: -1 }, undefined],
+    [{ n: 10000 }, undefined],
   ],
   test: inc => {
     const arg = { n: 5 };
