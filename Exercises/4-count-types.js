@@ -4,10 +4,11 @@ const countTypesInArray = array => {
   const result = {};
 
   for (const elem of array) {
-    hash[typeof elem] = (hash[typeof elem]) + 1 || 1;
+    const type = typeof elem;
+    result[type] = (result[type]) + 1 || 1;
   }
 
-  return hash;
+  return result;
 };
 
 module.exports = { countTypesInArray };
