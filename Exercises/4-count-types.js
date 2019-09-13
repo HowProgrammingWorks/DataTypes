@@ -1,14 +1,12 @@
 'use strict';
 
 const countTypesInArray = array => {
-  const types = { number: 0, boolean: 0, string: 0 };
+  const ret = {};
   for (const a of array) {
-    for (const b of Object.keys(types)) { if (typeof a === b) types[b]++; }
+    const type = typeof a;
+    ret[type] = ret[type] ? ++ret[type] : 1;
   }
-  if (types.number === 0) delete types.number;
-  if (types.boolean === 0) delete types.boolean;
-  if (types.string === 0) delete types.string;
-  return types;
+  return ret;
 };
 
 module.exports = { countTypesInArray };
