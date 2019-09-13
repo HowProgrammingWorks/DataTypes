@@ -1,6 +1,6 @@
 'use strict';
 
-const fn = a => {
+const fn = () => {
   const b = a++;
   return b;
 };
