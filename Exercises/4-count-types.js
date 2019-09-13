@@ -1,7 +1,7 @@
 'use strict';
 
 const countTypesInArray = array => {
-  const hash = {};
+  const result = {};
 
   for (const elem of array) {
     hash[typeof elem] = (hash[typeof elem]) + 1 || 1;
