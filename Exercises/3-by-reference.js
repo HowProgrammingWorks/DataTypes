@@ -2,7 +2,7 @@
 
 // const inc = num => ++num.n;
 
-const inc = function (object) {
+const inc = object => {
   ++object.n;
 };
 
