@@ -1,13 +1,14 @@
 'use strict';
 
-const countTypesInArray  = funObjects => {
-  const object2 = {};
-  for (const ar of funObjects) {
-    if (typeof ar in object2)
-      object2[typeof ar]++;
-    else object2[typeof ar] = 1;
+const countTypesInArray  = arg => {
+  const result = {};
+  for (const value of arg) {
+    const field = typeof value;
+    if (field in result)
+      result[field]++;
+    else result[field] = 1;
   }
-  return object2;
+  return result;
 };
 module.exports = { countTypesInArray };
 
