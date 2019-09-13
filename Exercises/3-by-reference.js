@@ -5,5 +5,4 @@ const inc = num => {
   ++num.n;
 };
 inc(a);
-console.log(a);
 module.exports = { inc };
