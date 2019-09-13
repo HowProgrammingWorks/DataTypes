@@ -4,7 +4,11 @@ const countTypesInArray = arr => {
   const object = {};
   for (const item of arr) {
     const key = typeof(item);
-    (key in object) ? object[key] += 1 : object[key] = 1;
+    if (key in object) {
+      object[key] += 1;
+    } else {
+      object[key] = 1;
+    }
   }
   return object;
 };
