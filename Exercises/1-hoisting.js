@@ -1,5 +1,8 @@
 'use strict';
 
-const fn = null;
+const fn = () => {
+  const local = 'hoisted variable';
+  console.log(local);
+};
 
 module.exports = { fn };
