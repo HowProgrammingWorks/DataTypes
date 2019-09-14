@@ -4,7 +4,8 @@ const countTypesInArray = array => {
   const hash = {};
   for (const value of array) {
     const type = typeof value;
-    hash[type] ? hash[type]++ : hash[type] = 1;
+    const counter = hash[type] || 0;
+    hash[type] = counter + 1;
   }
   return hash;
 };
