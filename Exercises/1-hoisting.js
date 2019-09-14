@@ -1,7 +1,7 @@
 'use strict';
 
 const fn = b => {
-  var a = b * 10;
+  const a = b * 10;
   console.log(a);
 };
 
