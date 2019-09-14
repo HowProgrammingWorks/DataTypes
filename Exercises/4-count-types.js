@@ -3,7 +3,7 @@
 const countTypesInArray = array => {
   const obj = {};
   for (const value of array) {
-    if (typeof(value) in obj) {
+    if (typeof value in obj) {
       ++obj[typeof(value)];
     } else {
       obj[typeof(value)] = 1;
