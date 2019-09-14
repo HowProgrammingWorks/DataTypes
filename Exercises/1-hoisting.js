@@ -1,5 +1,8 @@
 'use strict';
 
-const fn = null;
+const fn = () => {
+  const number = 3;
+  console.log(number);
+};
 
 module.exports = { fn };
