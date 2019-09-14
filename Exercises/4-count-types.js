@@ -2,8 +2,10 @@
 
 const countTypesInArray = typeArray => {
   const hash = {};
-  for (const Value of typeArray)
-    hash[typeof(Value)] = typeof(Value) in hash ? hash[typeof(Value)] + 1 : 1;
+  for (const Value of typeArray) {
+    const t = typeof(Value);
+    hash[t] = t in hash ? ++hash[t] : 1;
+  }
   return hash;
 };
 
