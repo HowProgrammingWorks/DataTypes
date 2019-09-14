@@ -1,8 +1,8 @@
 'use strict';
 
 const fn = () => {
+  const value = 'something';
   console.log(value);
-  var value = 'something';
 };
 
 fn();
