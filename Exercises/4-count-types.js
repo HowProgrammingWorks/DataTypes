@@ -1,7 +1,7 @@
 'use strict';
 
-const arr = [true, 3, '4', false, { n: 3 }, function (x) { return x + 1; },
-  { name: 'Marc' }, 'Marc', 3.11, [1, 2, 4], 5];
+/*const arr = [true, 3, '4', false, { n: 3 }, function (x) { return x + 1; },
+  { name: 'Marc' }, 'Marc', 3.11, [1, 2, 4], 5];*/
 
 const countTypesInArray = arr => {
   const result = {};
@@ -14,6 +14,6 @@ const countTypesInArray = arr => {
   return result;
 };
 
-console.dir(countTypesInArray(arr));
+//console.dir(countTypesInArray(arr));
 
 module.exports = { countTypesInArray };
