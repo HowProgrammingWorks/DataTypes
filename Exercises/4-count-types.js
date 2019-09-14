@@ -1,9 +1,12 @@
 'use strict';
 
-const countTypesInArray = a => a.reduce((b, i) => {
-  const t = typeof i;
-  b[t] = b[t] !== undefined ? ++b[t] : 1;
-  return b;
-}, {});
+const countTypesInArray = arr => arr.reduce(
+  (acc, item) => {
+    const key = typeof item;
+    acc[key] = ((key in acc) ? acc[key] : 0) + 1;
+    return acc;
+  },
+  {}
+);
 
 module.exports = { countTypesInArray };
