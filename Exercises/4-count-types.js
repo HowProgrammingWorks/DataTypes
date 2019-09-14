@@ -1,11 +1,15 @@
 'use strict';
 
 const countTypesInArray = arr => {
-  const hesh = { };
+  const hesh = {};
 
-  for (const name of arr) {
-    const t = typeof name;
-    (t === 'boolean' || 'string' || 'number') && (hesh[t] = (hesh[t] || 0) + 1);
+  for (const value of arr) {
+    const t = typeof value;
+    if (hesh[t] === undefined) {
+      hesh[t] = 1;
+    } else {
+      ++hesh[t];
+    }
   }
   return hesh;
 };
