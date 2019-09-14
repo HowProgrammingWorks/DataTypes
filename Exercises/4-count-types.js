@@ -3,7 +3,7 @@
 const countTypesInArray = arr => arr.reduce(
   (acc, item) => {
     const key = typeof item;
-    acc[key] = ((key in acc) ? acc[key] : 0) + 1;
+    acc[key] = acc[key] ? acc[key] + 1 : 1;
     return acc;
   },
   {}
