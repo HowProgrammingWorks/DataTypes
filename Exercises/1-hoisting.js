@@ -1,7 +1,8 @@
 'use strict';
 
 const fn = () => {
-  var variable;
+  const variable = 'variable without hoisting';
+  return variable;
 };
 
 module.exports = { fn };
