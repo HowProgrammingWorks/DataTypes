@@ -8,7 +8,7 @@ type(a)
 
 b = 5.2
 
-dic = {'d': a,'c': b}
+dic = {'d': a, 'c': b}
 #obj 
 print("Dictionary is: ", dic)
 
