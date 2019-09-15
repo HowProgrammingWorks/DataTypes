@@ -4,8 +4,7 @@ const countTypesInArray = array => {
   const types = {};
   for (const item of array) {
     const type = typeof item;
-    types[type] = types[type] || 0;
-    types[type]++;
+    types[type] = ++types[type] || 1;
   }
   return types;
 };
