@@ -3,8 +3,8 @@
 const countTypesInArray = values => {
   const types = {};
   for (const value of values) {
-    (value === null) ? types[null] = ++types[null] || 1 :
-      types[typeof value] = ++types[typeof value] || 1;
+    const type = typeof value;
+    types[type] = ++types[type] || 1;
   }
   return types;
 };
