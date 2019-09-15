@@ -5,7 +5,7 @@ const countTypesInArray = arr => {
 
   for (const value of arr) {
     const t = typeof value;
-    if (hesh[t] === undefined) {
+    if (!hesh[t]) {
       hesh[t] = 1;
     } else {
       ++hesh[t];
