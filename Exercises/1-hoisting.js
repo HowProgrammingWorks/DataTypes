@@ -1,5 +1,8 @@
 'use strict';
 
-const fn = null;
+const fn = () => {
+  let a;
+  console.log(`My favorite data type is ${a}`);
+};
 
 module.exports = { fn };
