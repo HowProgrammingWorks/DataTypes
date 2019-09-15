@@ -11,17 +11,14 @@
 'use strict';
 
 const countTypesInArray = array => {
-  const TypeMap = {};
+  const typeMap = {};
 
   for (const it of array) {
-    if (TypeMap[typeof it]) {
-      TypeMap[typeof it]++;
-    } else {
-      TypeMap[typeof it] = 1;
-    }
+    const counter = typeMap[typeof it] || 0;
+    typeMap[typeof it] = counter + 1;
   }
 
-  return TypeMap;
+  return typeMap;
 };
 
 module.exports = { countTypesInArray };
