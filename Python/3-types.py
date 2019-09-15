@@ -2,8 +2,7 @@ a = 5
 print(type(a))
 
 b = 5.2
-type(b)
-print(b)
+print(type(b))
 #<class 'float'>
 
 print(type(True))
@@ -26,5 +25,5 @@ person['age'] = 28
 print(person)
 
 array = {a, b, '56'}
-print('Arrray ',  array)
+print('Arrray ', array)
 print(type(array))
