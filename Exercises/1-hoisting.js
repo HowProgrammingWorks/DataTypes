@@ -1,5 +1,8 @@
 'use strict';
 
-const fn = null;
+const fn = () => {
+  const hosting = 1;
+  console.log(hosting);
+};
 
 module.exports = { fn };
