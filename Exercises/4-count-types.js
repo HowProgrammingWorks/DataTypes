@@ -1,14 +1,12 @@
 'use strict';
 
 const countTypesInArray = (arr, hash = {}) => {
-  arr.forEach(el => {
+  for (const el of arr) {
     const type = typeof el;
-    if (Object.keys(hash).includes(type)) {
-      ++hash[type];
-    } else {
+    (hash[type]) ?
+      ++hash[type] :
       hash[type] = 1;
-    }
-  });
+  }
 
   return hash;
 };
