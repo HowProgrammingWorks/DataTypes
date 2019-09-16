@@ -1,8 +1,8 @@
 'use strict';
 
 const fn = () => {
-  pickUp = 99;
-  var pickUp;
+  const pickUp = 100;
+  console.log(pickUp);
 };
 
 module.exports = { fn };
