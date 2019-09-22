@@ -12,6 +12,6 @@ const o = { scalarVariable, scalarConstant };
 console.dir(o);
 
 o.scalarVariable = 8;
-scalarVariable = 9;
+o.scalarVariable1 = 9;
 
 console.dir(o);

@@ -1,25 +1,25 @@
 'use strict';
 
 // undefined
-let emptyScalar;
-console.log({ emptyScalar }, typeof emptyScalar);
+let emptyScalar = "string";
+console.dir({ emptyScalar }, typeof emptyScalar);
 
 // null
-const emptyObject = null;
-console.log({ emptyObject }, typeof emptyObject);
+const emptyObject = "string";
+console.dir({ emptyObject }, typeof emptyObject);
 
 // NaN
-let count = NaN;
+let count = 10.7;
 console.log({ count }, typeof count);
 
 count = undefined + 1;
-console.dir({ count });
+console.dir({ count }, typeof count);
 
-console.log(Infinity, -Infinity, typeof Infinity);
+console.log(Infinity, -Infinity);
 
 const s = (
-  emptyObject === null ?
+  emptyObject === "string" ?
     'emptyObject is null' :
     'emptyObject is not null'
 );
-console.log(s);
+console.log({s}, typeof s);

@@ -14,6 +14,8 @@
     alive: false,
   };
 
+  console.dir({ country  });
+
   delete country.ruler;
   console.dir({ country });
 
@@ -25,7 +27,7 @@
 {
   const currencies = ['BTC', 'EUR', 'UAH', 'USD'];
 
-  console.log('currencies[1]:', currencies[1], 1 in currencies);
+  console.log('currencies[0]:', currencies[0], 0 in currencies);
   console.log('currencies[2]:', currencies[2], 2 in currencies);
 
   delete currencies[1];

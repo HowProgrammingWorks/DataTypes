@@ -19,6 +19,8 @@ const cities = ['Athens', 'Roma', 'London', 'Beijing', 'Kiev', 'Riga'];
 cities.push('Odessa');
 cities.unshift('New York');
 
+console.log({ cities }, typeof cities);
+
 console.log('shift: ' + cities.shift());
 console.log('pop: ' + cities.pop());
 
@@ -28,9 +30,11 @@ console.log({ b }, typeof b);
 console.log({ f }, typeof f);
 
 console.log({ person }, typeof person);
-console.log({ isArray: Array.isArray(person) });
+console.log({ isArray: Array.isArray(cities) }); // почему здесь true
+console.log({ isArray: Array.isArray(person) }); // а здесь false, хотя оба object?
 
 console.log({ cities }, typeof cities);
 console.log({ isArray: Array.isArray(cities) });
 
-console.log({ instanceofArray: cities instanceof Array });
+console.log({ instanceofArray: cities instanceof Array }); // аналогично выше примеру.
+console.log({ instanceofArray: person instanceof Array });
