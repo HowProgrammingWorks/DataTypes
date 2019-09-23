@@ -1,12 +1,16 @@
 'use strict';
 
 const countTypesInArray = arr => {
-  const typesMass = {};
-  for (const el of arr) {
-    const t = typeof el;
-    typesMass[t] = (t in typesMass) ? typesMass[t] + 1 : 1;
+  const types = {};
+  for (const i of arr) {
+    const t = typeof i;
+    const el = types[t];
+    if (el)
+      types[t]++;
+    else
+      types[t] = 1;
   }
-  return typesMass;
+  return types;
 };
 
 module.exports = { countTypesInArray };
