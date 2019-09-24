@@ -1,9 +1,9 @@
 'use strict';
 
 const fn = () => {
-  console.log(name); // Variable "name" hoisted and it value is "undefined"
+  const name = 'Ilya';
 
-  var name = 'Ilya';
+  console.log(name);
 };
 
 module.exports = { fn };
