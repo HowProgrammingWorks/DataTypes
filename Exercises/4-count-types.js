@@ -1,11 +1,12 @@
 'use strict';
 
-const countTypesInArray = function (array) {
-  const obj = {};
+const countTypesInArray = array => {
+  const counters = {};
   for (const elemAr of array) {
-    const temp = typeof(elemAr);
-    obj[temp] = obj[temp] ? ++obj[temp] : 1;
+    const elemType = typeof(elemAr);
+    const counter = counters[elemType] || 0;
+    counters[elemType] = counter + 1;
   }
-  return obj;
+  return counters;
 };
 module.exports = { countTypesInArray };
