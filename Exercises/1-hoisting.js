@@ -7,6 +7,5 @@ const fn = () => {
     return a + b;
   }
 };
-fn();
 
 module.exports = { fn };
