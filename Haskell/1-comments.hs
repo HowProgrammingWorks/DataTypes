@@ -1,0 +1,6 @@
+-- Single comment.
+
+{- 
+  Multiline 
+  comments.
+-}
