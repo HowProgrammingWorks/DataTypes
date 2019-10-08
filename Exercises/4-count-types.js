@@ -15,10 +15,10 @@
  */
 
 const countTypesInArray = arr => {
-  const obj = {};
-  for (const iter of arr) {
-    const val = typeof iter;
-    val in obj ? obj[val]++ : obj[val] = 1;
+  const obj = {}; // инициализируем пустой обьект
+  for (const iter of arr) { // обходим массив
+    const val = typeof iter; // на кажд. итер. записываем в 'val' тип значения
+    obj[val] ? obj[val]++ : obj[val] = 1; // если в массиве есть тип, икремент
   }
   return obj;
 };
