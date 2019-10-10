@@ -1,6 +1,5 @@
 'use strict';
 
-const arrayOfTypes = [true, 'hello', 5, 12, -200, false, false, 'word'];
 
 const countTypesInArray = array => {
   const hash = {};
@@ -10,5 +9,4 @@ const countTypesInArray = array => {
   }
   return hash;
 };
-countTypesInArray(arrayOfTypes);
 module.exports = { countTypesInArray };
