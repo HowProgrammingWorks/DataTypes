@@ -3,8 +3,8 @@
 const countTypesInArray = arr => {
   const types = {};
   for (const i of arr) {
-    if (!types[typeof i]) types[typeof i] = 0;
-    types[typeof i]++;
+    const key = typeof i;
+    types[key] ? ++types[key] : types[key] = 1;
   }
   return types;
 };
