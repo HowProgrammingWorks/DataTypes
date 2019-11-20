@@ -113,6 +113,9 @@
     "new-parens": [
       "error"
     ],
+    "no-lonely-if": [
+      "error"
+    ],
     "no-trailing-spaces": [
       "error"
     ],
@@ -148,7 +151,7 @@
     "space-before-function-paren": [
       "error",
       {
-        "anonymous": "always",
+        "anonymous": "never",
         "named": "never",
         "asyncArrow": "always"
       }
