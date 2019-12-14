@@ -6,7 +6,10 @@
   },
   "extends": "eslint:recommended",
   "parserOptions": {
-    "ecmaVersion": 2018
+    "ecmaVersion": 2020
+  },
+  "globals": {
+    "BigInt": true
   },
   "rules": {
     "indent": [
