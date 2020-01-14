@@ -1,6 +1,6 @@
 'use strict';
 
-const inc = function(obj) {
+const inc = obj => {
   obj.n++;
 };
 
