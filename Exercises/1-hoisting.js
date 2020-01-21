@@ -1,5 +1,8 @@
 'use strict';
 
-const fn = null;
-
+// 'use strict' забороняє підняття змінної
+const fn = () => {
+  const name = 'Yaroslav';
+  console.log(`Hello, ${name}`);
+};
 module.exports = { fn };
