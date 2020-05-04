@@ -1,6 +1,6 @@
 'use strict';
 
-const arr = [true, 'hello', 5, 12, -200, false, false, 'word', 1, true, 'hello'];
+const arr = [true, 'hello', 5, 12, -20, false, false, 'word', 1, true, 'hello'];
 const tb = {};
 
 const countTypesInArray = () => {
@@ -9,7 +9,7 @@ const countTypesInArray = () => {
     const count = tb[type] || 0;
     tb[type] = count + 1;
   }
-  console.log(tb);
+  return tb;
 };
-countTypesInArray();
+
 module.exports = { countTypesInArray };
