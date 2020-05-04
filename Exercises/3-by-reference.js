@@ -1,5 +1,7 @@
 'use strict';
 
-const inc = x => x.n--;
+const inc = x => {
+  if (typeof x === 'object') { x.n--; }
+};
 
 module.exports = { inc };

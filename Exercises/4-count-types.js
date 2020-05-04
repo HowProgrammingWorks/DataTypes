@@ -1,17 +1,15 @@
 'use strict';
-const arr = [true, 'hello', 5, 12, -200, false, false, 'word'];
-const tb = {
-  number: 0,
-  string: 0,
-  boolean: 0,
-};
+
+const arr = [true, false, false];
+const tb = {};
+
 const countTypesInArray = () => {
   for (const item of arr) {
-    if (typeof item === 'number') {
-      tb.number++;
-    } else if (typeof item === 'string') {
-      tb.string++;
-    } else { tb.boolean++; }
+    const type = typeof item;
+    const count = tb[type] || 0;
+    tb[type] = count + 1;
   }
+  return tb;
 };
+
 module.exports = { countTypesInArray };
