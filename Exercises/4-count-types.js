@@ -1,8 +1,7 @@
 'use strict';
 
-const tb = {};
-
 const countTypesInArray = arr => {
+  const tb = {};
   for (const item of arr) {
     const type = typeof item;
     const count = tb[type] || 0;
