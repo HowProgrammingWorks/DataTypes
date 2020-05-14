@@ -1,7 +1,7 @@
 'use strict';
 
 const inc = x => {
-  if (typeof x === 'object') { x.n++; }
+  if (typeof x === 'object')  x.n++;
 };
 
 module.exports = { inc };
