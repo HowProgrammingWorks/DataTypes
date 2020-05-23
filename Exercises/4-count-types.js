@@ -1,12 +1,13 @@
 'use strict';
 
-function countTypesInArray (arr){
+function countTypesInArray(arr) {
+  const obj = {};
   for (const elem of arr) {
     const key = typeof elem;
-    this[key] === undefined ? this[key] = 1 : this[key]++;
+    obj[key] === undefined ? obj[key] = 1 : obj[key]++;
   }
-  return this;
-};
-//module.exports = { countTypesInArray };
+  return obj;
+}
 
-console.log(countTypesInArray([true, false, 15]));
+module.exports = { countTypesInArray };
+
