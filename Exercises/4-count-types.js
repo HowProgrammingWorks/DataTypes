@@ -1,7 +1,5 @@
 'use strict';
 
-const array = [true, 'hello', 5, 12, -200, false, false, 'word'];
-
 const countTypesInArray = array => {
   const obj = {};
   array.forEach(item => {
