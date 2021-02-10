@@ -1,5 +1,8 @@
 'use strict';
 
-const fn = null;
+const fn = () => {
+  const local = 'local variable with hoisting';
+  console.log(local);
+};
 
 module.exports = { fn };
