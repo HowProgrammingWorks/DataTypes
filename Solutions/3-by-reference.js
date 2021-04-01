@@ -1,6 +1,6 @@
 'use strict';
 
-const inc = obj => {
+const inc = (obj) => {
   if (typeof obj === 'object') {
     obj.n++;
   }

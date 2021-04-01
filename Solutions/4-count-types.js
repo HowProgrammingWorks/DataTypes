@@ -1,6 +1,6 @@
 'use strict';
 
-const countTypesInArray = arr => {
+const countTypesInArray = (arr) => {
   const counters = {};
   for (const element of arr) {
     const type = typeof element;
