@@ -1,8 +1,8 @@
 'use strict';
 
-console.log(parseInt('11', 2)); // 3
-console.log(parseInt('11', 8)); // 9
-console.log(parseInt('11', 16)); // 17
+console.log(0b11); // 3
+console.log(0o11); // 9
+console.log(0x11); // 17
 
 console.log(parseInt(5, 10)); // 5
 console.log(parseInt('5', 10)); // 5
@@ -25,7 +25,7 @@ console.log(0.0000005,      parseInt(0.0000005, 10)); // 5e-7 5
 console.log(0.000005,       parseInt(0.000005, 10)); // 0.000005 0
 
 // 255
-console.log(parseInt('fF', 16));
+console.log(0xfF);
 console.log(parseInt('0xff', 16));
 console.log(parseInt('0xFf', 16));
 console.log(parseInt('  0xFf   ', 16));
@@ -36,7 +36,7 @@ console.log(parseInt('ff', 8));
 console.log(parseInt('ff', 10));
 console.log(parseInt('ff', 15));
 
-console.log(parseInt('ff', 16)); // 255
+console.log(0xff); // 255
 console.log(parseInt('ff', 17)); // 270
 console.log(parseInt('ff', 20)); // 315
 console.log(parseInt('ff', 30)); // 465
