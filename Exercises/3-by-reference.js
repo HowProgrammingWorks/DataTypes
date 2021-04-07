@@ -1,5 +1,7 @@
 'use strict';
 
-const inc = null;
+const inc = function(a) {
+  a.n += 1;
+};
 
 module.exports = { inc };
