@@ -1,5 +1,7 @@
 'use strict';
 
-const inc = null;
+const inc = num => {
+  num.n += 1;
+};
 
 module.exports = { inc };
