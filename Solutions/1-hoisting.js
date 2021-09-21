@@ -5,4 +5,6 @@ const fn = () => {
   var a = 5;
 };
 
+console.log(fn);
+
 module.exports = { fn };
