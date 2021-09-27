@@ -1,8 +1,8 @@
 'use strict';
 
 const fn = () => {
-  console.dir(a);
-  var a = 10;
+  const a = 10;
+  console.log({ a });
 };
 
 module.exports = { fn };
