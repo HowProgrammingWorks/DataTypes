@@ -5,4 +5,5 @@ const fn = (name) => {
   console.log(greet + name);
   var greet;
 };
-//module.exports = { fn };
+
+module.exports = { fn };
