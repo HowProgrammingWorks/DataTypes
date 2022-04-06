@@ -1,0 +1,6 @@
+'use strict';
+
+
+const fn = x => x1;
+
+module.exports = { fn };
