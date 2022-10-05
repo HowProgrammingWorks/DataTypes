@@ -1,6 +1,6 @@
 ({
   name: 'inc',
-  length: [20, 70],
+  length: [15, 70],
   cases: [
     [{ n: 0 }, undefined],
     [{ n: 1 }, undefined],
