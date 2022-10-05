@@ -1,8 +1,8 @@
 'use strict';
 
 const fn = () => {
-  console.log(n);
   const n = 5;
+  console.log(n);
 };
 
 
