@@ -33,8 +33,8 @@ console.log('BigInt(3n / 2n) =', BigInt(3n / 2n));
 // SyntaxError: Cannot convert 1.5 to a BigInt
 
 // console.log('BigInt(1.5) =', BigInt(1.5));
-// RangeError: The number 1.5 is not a safe integer
-// and thus cannot be converted to a BigInt
+// RangeError: The number 1.5 cannot be converted
+// to a BigInt because it is not an integer
 
 console.log('2n > 1n =', 2n > 1n);
 console.log('2n > 1 =', 2n > 1);
