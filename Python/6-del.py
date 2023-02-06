@@ -4,7 +4,7 @@ my_dict = {
 	'city': 'Rome'
 }
 
-print(my_dict) 
+print(my_dict)
 # {'name': 'Marcus', 'lastname': 'Aurelius', 'city': 'Rome'}
 del my_dict['name']
 print(my_dict)
