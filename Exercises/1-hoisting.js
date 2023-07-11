@@ -1,5 +1,8 @@
 'use strict';
 
-const fn = null;
+const fn = () => ({
+  name: 'fn',
+  length: [20, 150],
+});
 
 module.exports = { fn };
