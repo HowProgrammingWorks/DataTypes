@@ -7,10 +7,10 @@
     [-1, 0],
     [10000, 10001],
   ],
-  test: inc => {
+  test: (inc) => {
     const a = 5;
     const b = inc(a);
     if (a === b) throw new Error('Result should not be equal to argument');
     if (typeof b !== 'number') throw new Error('Result should be Number');
-  }
+  },
 })
