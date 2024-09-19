@@ -7,7 +7,7 @@
     [{ n: -1 }, undefined],
     [{ n: 10000 }, undefined],
   ],
-  test: inc => {
+  test: (inc) => {
     const arg = { n: 5 };
     const result = inc(arg);
     if (typeof result !== 'undefined') {
@@ -17,5 +17,5 @@
       const res = JSON.stringify(arg);
       throw new Error(`Case failed: expected {"n":6}, result: ${res}`);
     }
-  }
+  },
 })
