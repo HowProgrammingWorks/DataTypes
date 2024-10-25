@@ -1,4 +1,4 @@
-'use strict';
+  'use strict';
 
 const countTypesInArray = (arr) => {
   const counters = {};

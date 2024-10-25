@@ -1,7 +1,11 @@
 'use strict';
 
+
+
 const inc = (obj) => {
-  console.log(obj);
+  if (typeof obj === 'object') {
+    obj.n++;
+  };
 };
 
 module.exports = { inc };
