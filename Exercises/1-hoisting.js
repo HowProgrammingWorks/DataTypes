@@ -1,5 +1,8 @@
 'use strict';
 
-const fn = null;
+const fn = () => {
+  const someData = undefined;
+  return someData;
+};
 
 module.exports = { fn };
