@@ -19,8 +19,8 @@ const cities = ['Athens', 'Roma', 'London', 'Beijing', 'Kiev', 'Riga'];
 cities.push('Odessa');
 cities.unshift('New York');
 
-console.log('shift: ' + cities.shift());
-console.log('pop: ' + cities.pop());
+console.log(`shift: ${cities.shift()}`);
+console.log(`pop: ${cities.pop()}`);
 
 console.log({ i }, typeof i);
 console.log({ s }, typeof s);
