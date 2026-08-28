@@ -1,5 +1,8 @@
 'use strict';
 
-const fn = null;
+const fn = function raising() {
+  const variable = 'Hello';
+  console.log(variable);
+};
 
 module.exports = { fn };
